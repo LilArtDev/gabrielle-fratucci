@@ -11,7 +11,7 @@ export function InitialSection(props: { onYesClick?: () => void }) {
     setTimeout(() => setIsAngry(false), 1000);
   };
   return (
-    <section className="relative flex flex-col items-center justify-around h-max min-h-screen w-full overflow-hidden">
+    <section className="fixed flex flex-col items-center justify-around h-max min-h-screen w-full overflow-hidden">
       <motion.div
         className="absolute -z-5 w-full h-dvh bg-radial-[at_50%_40%] from-transparent to-red-900 to-80% size-24 opacity-0 "
         animate={{ opacity: isAngry ? 0.7 : 0 }}
