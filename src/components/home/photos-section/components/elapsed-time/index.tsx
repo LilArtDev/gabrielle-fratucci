@@ -1,4 +1,4 @@
-import { motion, scale } from "framer-motion";
+import { motion  } from "framer-motion";
 import { useEffect, useState } from "react";
 
 const START_DATE = new Date("2025-02-23T14:35:00");
@@ -70,7 +70,7 @@ export function ElapsedTimer() {
         (key: string, index: number) => (
           <motion.div
             key={key}
-            animate={{ y: [0, -2], scale: [1, 1.01], rotate: [0,5] }}
+            animate={{ y: [0, -2], scale: [1, 1.01], rotate: [0, 5] }}
             transition={{
               duration: 10,
               type: "spring",
