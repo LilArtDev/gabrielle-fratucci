@@ -13,7 +13,7 @@ export function InitialSection(props: { onYesClick?: () => void }) {
   return (
     <section className="fixed flex flex-col items-center justify-around h-max min-h-screen w-full overflow-hidden">
       <motion.div
-        className="absolute -z-5 w-full h-dvh bg-radial-[at_50%_40%] from-transparent to-red-900 to-80% size-24 opacity-0 "
+        className="fixed -z-5 w-full h-full min-h-screen bg-radial-[at_50%_40%] from-transparent to-red-900 to-80% size-24 opacity-0 "
         animate={{ opacity: isAngry ? 0.7 : 0 }}
         transition={{
           duration: 0.2,
@@ -26,7 +26,7 @@ export function InitialSection(props: { onYesClick?: () => void }) {
         alt="Meu amorzinho"
         width={720}
         height={1280}
-        className="w-full h-dvh absolute top-0 left-0 object-cover -z-10 opacity-20"
+        className="w-full h-full min-h-screen absolute top-0 left-0 object-cover -z-10 opacity-20"
       />
       <div className="mx-5 text-center">
         <motion.h1
